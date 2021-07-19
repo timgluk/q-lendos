@@ -479,7 +479,16 @@ body {
   text-transform: uppercase;
 }
 
+.footer__list-box {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   color: rgb(102, 102, 102, 0.6);
   font-size: 14px;
   font-family: "Roboto", Arial, sans-serif;
@@ -488,7 +497,7 @@ body {
   list-style-type: none;
 }
 
-.list__item_first {
+.footer__title-list {
   margin-bottom: 20px;
   color: rgb(51, 51, 51);
   font-weight: bold;
@@ -599,12 +608,23 @@ body {
 
   .steps__box {
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
   }
 
   .step {
     height: 240px;
+    margin: 0 0 10px 0;
+    background-image: url(media/mobile_step1.png);
     background-size: contain;
+  }
+
+  .step_2 {
+    background-image: url(media/mobile_step2.png);
+  }
+
+  .step_3 {
+    background-image: url(media/mobile_step3.png);
   }
 
   /* section partners */
@@ -643,6 +663,21 @@ body {
 
   .grid__img {
     height: 120px;
+    background-image: url(media/mobile_grid1.png);
+    border: none;
+    box-shadow: none;
+  }
+
+  .grid__img_2 {
+    background-image: url(media/mobile_grid2.png);
+  }
+
+  .grid__img_3 {
+    background-image: url(media/mobile_grid3.png);
+  }
+
+  .grid__img_4 {
+    background-image: url(media/mobile_grid4.png);
   }
 
   .grid__img_5 {
@@ -657,6 +692,10 @@ body {
     grid-column-end: 1;
     width: 300px;
     background-image: url(media/grid6.png);
+  }
+
+  .grid__img_7 {
+    background-image: url(media/mobile_grid7.png);
   }
 
   /* section search */
@@ -695,14 +734,41 @@ body {
   .footer {
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
+  }
+
+  .footer__logo {
+    margin: 20px;
   }
 
   .list {
     padding: 0;
-    
   }
 
   .copyright__text {
     text-align: center;
+  }
+
+  .footer__list-box {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__title-list {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list__item {
+    padding: 0 10px;
+  }
+
+  .copyright__text {
+    margin-top: 10px;
   }
 }
